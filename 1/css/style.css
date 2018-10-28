@@ -1,0 +1,220 @@
+* { /*init all default css, h1 has padding now does not*/
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /**same as above*/
+    font: normal 16px Arial Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+a:hover {
+    color:orange;
+}
+
+a:active {
+    color: aqua;
+}
+
+a:visited {
+
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: auto; /*put space left and right*/
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    
+}
+.button:hover {
+    background-color: red;
+    color:white;
+    
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1{
+    background-color: #333; /*same with #333333*/
+    color: white;
+
+    /* border - width - color - type*/
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+
+    /*all of them are same so*/
+    border: 5px red solid;
+
+    /*set one by one*/
+    border-width: 6px;
+    border-color: red;
+    border-top-style: dotted;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 20px 15px;
+
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.box-1 h1 {
+    margin: 5px;
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+}
+
+.box-2 {
+    background-color: aqua;
+    
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: 1px #333 dotted;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{    
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#side-bar {
+    float: right;
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center;
+}
+.p-box h1 {
+    color: aqua;
+    position: absolute; /*make h1 start browser window, if there is relative on its parent, make it start ffrom its parent*/
+    top:50px;
+    left: 100px;
+}
+
+.p-box h2 {
+    color: orangered;
+    position: absolute;
+    bottom:40px;
+    right: 100px;
+}
+
+.fix-me {
+    position: fixed;
+    top: 300px;
+}
+
+.my-list li:first-child{
+background: red;
+}
+
+.my-list li:last-child{
+background: rebeccapurple;
+}
+
+.my-list li:nth-child(4){
+    background: yellow;
+}
+
+.my-list li:nth-child(odd){
+    background: blue;
+}
